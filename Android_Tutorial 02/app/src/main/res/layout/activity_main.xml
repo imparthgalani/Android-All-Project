@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="@style/Style_image"
+                android:contentDescription="@string/topheader"
+                app:layout_constraintBottom_toTopOf="@+id/headerText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/laptop" />
+
+            <TextView
+                android:id="@+id/headerText"
+                style="@style/Style_one"
+                android:gravity="center_horizontal"
+                android:text="@string/header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/FirstName"
+                style="@style/Style_one"
+                android:text="@string/FirstName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/headerText" />
+
+            <TextView
+                android:id="@+id/MiddelName"
+                style="@style/Style_one"
+                android:text="@string/MiddleName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FirstName" />
+
+            <TextView
+                android:id="@+id/LastName"
+                style="@style/Style_one"
+                android:text="@string/LastName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MiddelName" />
+
+            <TextView
+                android:id="@+id/Email"
+                style="@style/Style_one"
+                android:text="@string/Email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LastName" />
+
+            <TextView
+                android:id="@+id/Password"
+                style="@style/Style_one"
+                android:text="@string/Password"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+            <LinearLayout
+                style="@style/Style_one"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Password"
+                app:layout_constraintVertical_bias="0.047">
+
+                <TextView
+                    android:id="@+id/Gender"
+                    style="@style/Style_one"
+                    android:layout_weight="1"
+                    android:text="@string/Gender" />
+
+                <TextView
+                    android:id="@+id/City"
+                    style="@style/Style_one"
+                    android:layout_weight="1"
+                    android:text="@string/City" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

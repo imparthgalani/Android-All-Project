@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">18SOECE11014</string>
+    <string name="app_Title">About Us</string>
+    <string name="topheader">headerView</string>
+    <string name="header">18SOECE11014</string>
+    <string name="FirstName">Parth</string>
+    <string name="MiddleName">Pravinbhai</string>
+    <string name="LastName">Galani</string>
+    <string name="Email">pgalani193@rku.ac.in</string>
+    <string name="Password">................</string>
+    <string name="Gender">Male</string>
+    <string name="City">Amreli</string>
+</resources>
